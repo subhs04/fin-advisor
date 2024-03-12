@@ -109,3 +109,9 @@ nav a {
   height: 600px; /* Adjust as needed */
   overflow: hidden;
 }
+
+@media (max-width: 768px) {
+  .carousel-inner {
+    height: auto; /* Allow height to adjust based on content */
+  }
+}
