@@ -7,11 +7,11 @@ body,html {
 }
 
 header {
+  margin: 0;
+  padding: 20px;
   background-color: #333;
   color: #fff;
-  padding: 20px;
   text-align: center;
-  height: 90.67px;
 }
 footer {
   background-color: #333;
@@ -21,9 +21,11 @@ footer {
   height: 90.67px;
 }
 
+/* Adjust margin and padding for nav */
 nav {
-  background-color: #444;
+  margin: 0;
   padding: 10px 0;
+  background-color: #444;
   text-align: center;
 }
 
@@ -43,19 +45,19 @@ nav a {
 }
 
 .heroHome {
-  background-image: url('../images/image4.jpg');
   background-size: contain;
   background-position: center;
-  height: 302.5px;
-  margin: 0; /* Set margin to zero */
-  padding: 0; /* Set padding to zero */
+  margin: 0;
+  padding: 0;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   text-align: center;
-  color: #fff; /* Set text color to contrast with the background image */
+  color: #fff;
+  height: auto;
 }
+
 
 
 .about, .services, .contact, .tools {
@@ -95,3 +97,11 @@ nav a {
   display: block;
 }
 
+.carousel-caption.caption-top {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 20px; /* Adjust as needed */
+  color: #fff; /* Text color */
+}
