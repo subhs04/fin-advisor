@@ -1,6 +1,6 @@
 /* styles.css */
 
-body {
+body,html {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
@@ -11,6 +11,14 @@ header {
   color: #fff;
   padding: 20px;
   text-align: center;
+  height: 90.67px;
+}
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  height: 90.67px;
 }
 
 nav {
@@ -34,17 +42,28 @@ nav a {
   padding: 100px 0;
 }
 
+.heroHome {
+  background-image: url('../images/image4.jpg');
+  background-size: contain;
+  background-position: center;
+  height: 302.5px;
+  margin: 0; /* Set margin to zero */
+  padding: 0; /* Set padding to zero */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  color: #fff; /* Set text color to contrast with the background image */
+}
+
+
 .about, .services, .contact, .tools {
   padding: 50px 20px;
   text-align: center;
 }
 
-footer {
-  background-color: #333;
-  color: #fff;
-  padding: 20px;
-  text-align: center;
-}
+
 
 /** Drop down changes starts **/
 .dropdown {
