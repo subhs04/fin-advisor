@@ -105,3 +105,7 @@ nav a {
   padding: 20px; /* Adjust as needed */
   color: #fff; /* Text color */
 }
+.carousel-inner {
+  height: 600px; /* Adjust as needed */
+  overflow: hidden;
+}
