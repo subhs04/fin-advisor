@@ -4,6 +4,8 @@ body,html {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
+  width: 100%; 
+  overflow-x: hidden; 
 }
 
 header {
@@ -102,16 +104,56 @@ nav a {
   top: 0;
   left: 0;
   right: 0;
-  padding: 20px; /* Adjust as needed */
+  padding: 20px; 
   color: #fff; /* Text color */
 }
 .carousel-inner {
+  max-width: 100%; /* Ensure the carousel does not overflow */
   height: 600px; /* Adjust as needed */
   overflow: hidden;
 }
 
+
+/* Add the following code for responsive adjustments */
+/* Add the following code for responsive adjustments */
 @media (max-width: 768px) {
+  header, footer, nav {
+    width: 100%; /* Ensure header, footer, and nav take up full width on smaller screens */
+  }
+
   .carousel-inner {
-    height: auto; /* Allow height to adjust based on content */
+    height: auto !important;
+	overflow: hidden; 
+	max-width: 100%; 
+  }
+
+  header {
+    margin: 0;
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    height: auto !important;
+  }
+  
+  body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Set a minimum height of the viewport */
+    overflow-x: hidden; /* Hide horizontal overflow */
+  }
+
+  main {
+    flex: 1; /* Allow the main content area to grow and fill remaining space */
+    padding-bottom: 100px;
+  }
+
+  footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    margin-top: auto; /* Keep the footer at the bottom */
   }
 }
+
