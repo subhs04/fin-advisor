@@ -45,6 +45,10 @@ nav a {
   text-align: center;
   padding: 100px 0;
 }
+.hero p {
+  margin-left: 40px; /* Adjust as needed */
+  margin-right: 40px; /* Adjust as needed */
+}
 
 .heroHome {
   background-size: contain;
@@ -151,9 +155,13 @@ nav a {
   footer {
     background-color: #333;
     color: #fff;
-    padding: 20px;
+    padding: 30px;
     text-align: center;
     margin-top: auto; /* Keep the footer at the bottom */
+  }
+
+  .hero {
+    padding: 50px; /* Inside media query */
   }
 }
 
